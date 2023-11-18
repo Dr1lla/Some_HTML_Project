@@ -1,0 +1,727 @@
+@font-face {
+    font-family: "Rubik Regular";
+    src: url(../fonts/Rubik/Rubik-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Rubik Normal";
+    src: url(../fonts/Rubik/Rubik-Medium.ttf)
+}
+
+@font-face {
+    font-family: "Rubik Bold";
+    src: url(../fonts/Rubik/Rubik-Bold.ttf)
+}
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url(../fonts/OpenSans/OpenSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(../fonts/OpenSans/OpenSans-Bold.ttf)
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #695e5e;
+    margin: 0;
+    font-family: "Rubik Regular",sans-serif;
+}
+div{
+    display: block;
+}
+.container {
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
+.header-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 15vh;
+}
+
+.top-header {
+    background-color: white;
+    position: relative;
+    width: 100%;
+}
+
+ .top-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.bottom-header {
+    background-color: #fff;
+    height: 7vh;
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+}
+.main-menu {
+    float: left;
+    box-sizing: border-box;
+    word-spacing: 15px;
+}
+.main-menu, a{
+    color: #99A2AA;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    word-wrap: break-word;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+.main-menu, a:hover{
+    color: black;
+}
+.yellowT{
+    width: 100vw;
+    height: 48vh;
+    background-color: #FEC524;
+}
+.yellowT-heading {
+    width: 40vw;
+    height: 20vh;
+    float: left;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    left: 15vw;
+}
+.yellowT-heading h1{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word;
+}
+.yellowT-heading p{
+    margin-top: 20px;
+}
+.mailPanel{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ece7e7;
+
+}
+.mailTracking {
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    top: -120px;
+    position: relative;
+}
+.tracking{
+    display: flex;
+    justify-content: center;
+}
+
+.tracking input[name=number] {
+    height: 6vh;
+    width: 22vw;
+    padding: 8px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+    text-indent: 20px;
+}
+.tracking input[name=number]::placeholder{
+    font-size: 16px;
+    color: #757575;
+    font-family: "Rubik Regular",sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+}
+.tracking input[type=submit]{
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    text-transform: uppercase;
+    border-left: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: #192046;
+    font-weight: 600;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+    border: 1px solid white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.trackingButtons{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.trackingButton{
+    width: 15vw;
+    height: 6vh;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #99A2AA;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition-duration: 1s;
+}
+.trackingButton:hover{
+    color: black;
+}
+.trackingButton-text{
+    padding-left: 15px;
+}
+.mailServices {
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+.servicesColumn{
+    flex: 1;
+    box-sizing: border-box;
+}
+.mailPanel-col {
+    height: 70%;
+}
+.mailPanel-col h1{
+    color: #0E2F4B;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word
+}
+.mailPanel-col p{
+    color: #0E2F4B;
+    font-size: 16px;
+    font-family: "OpenSans-Regular",sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word
+}
+.link1{
+    width: 370px;
+    height: 180px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    transition-duration: 2s;
+    color: #0E2F4B;
+}
+.link1 a{
+    color: black;
+}
+.link1 h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-top: 30px;
+    padding-right: 100px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+}
+.link1 span{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+#link1_1:hover{
+    color: white;
+    background-color: #9e50e3;
+}
+#link1_2:hover{
+    color: white;
+    background-color: #f95050;
+}
+#link1_3:hover{
+    color: white;
+    background-color: #a6d5d5;
+}
+#link1_4:hover{
+    color: white;
+    background-color: #fdc13d;
+}
+#link1_5:hover{
+    color: white;
+    background-color: #4a90e2;
+}
+#link1_6:hover{
+    color: white;
+    background-color: #4a90e2;
+}
+.businessPanel{
+    width: 100vw;
+    height: 70vh;
+    background-color: #042C4B;
+    position: relative;
+    top: -20px;
+}
+.businessDiv{
+    padding-top: 120px;
+}
+.businessDiv h1{
+    color: #F8F8F8;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word
+}
+.businessDiv p{
+    color: #99A2AA;
+    font-size: 16px;
+    font-family: "OpenSans-Regular",sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word
+}
+
+.businessButton{
+    width: 305px;
+    height: 80px;
+    background-color: #fdc13d;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition-duration: 1s;
+}
+.businessButton-text{
+    color: #0E2F4B;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Rubik Regular",sans-serif;
+    font-weight: 700;
+    line-height: 80px;
+    word-wrap: break-word;
+    transition-duration: 1s;
+}
+.businessButton:hover{
+    background-color: #ffd50a;
+}
+.financePanel{
+    width: 100vw;
+    height: 100vh;
+    background-color: #faefef;
+    position: relative;
+    top: -35px;
+    border: 1px solid transparent;
+}
+.financeDiv1{
+    width: 70vw;
+    height: 20vh;
+    background-color: #FDC13D;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+    color: #0E2F4B;
+    display: block;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+.financeDiv1 h1{
+    color: #0E2F4B;
+    font-size: 24px;
+    font-family: "Rubik Regular",sans-serif;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 60px;
+    padding-top: 29px;
+}
+.financeDiv1 p{
+    color: #0E2F4B;
+    font-size: 16px;
+    font-family: "OpenSans-Regular",sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 60px;
+}
+.financeDiv1 span{
+    color: #0E2F4B;
+    font-size: 16px;
+    font-family: "OpenSans-Regular",sans-serif;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 60px;
+}
+.financeDiv2-header{
+    color: #0E2F4B;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word;
+    padding-top: 70px;
+}
+.financeDiv2{
+    display: flex;
+    margin: -15px
+}
+.financeBlock{
+    width: 18vw;
+    height: 32vh;
+    background-color: rgba(255, 255, 255, 0.61);
+    margin: 15px;
+    transition-duration: 2s;
+    color: #0E2F4B;
+}
+.financeBlock h1{
+    padding-left: 30px;
+    padding-top: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+.financeBlock span{
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+#financeBlock_1:hover{
+    color: white;
+    background-color: #a6d5d5;
+}
+#financeBlock_2:hover{
+    color: white;
+    background-color: #9e50e3;
+}
+#financeBlock_3:hover{
+    color: white;
+    background-color: #f95050;
+}
+.indexPanel{
+    width: 100vw;
+    height: 70vh;
+    background-color: #042C4B;
+    position: relative;
+    top: -60px;
+}
+.indexDiv{
+    padding-top: 120px;
+}
+.indexDiv h1{
+    color: #F8F8F8;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word
+}
+.indexDiv p {
+    color: #99A2AA;
+    font-size: 16px;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+.indexDiv input[name=town]{
+    height: 80px;
+    width: 25vw;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Закруглені кути */
+    outline: none;
+    box-sizing: border-box; /* Включає в розрахунок padding і border при визначенні ширини та висоти */
+    text-indent: 20px;
+}
+.indexDiv input[name=town]::placeholder{
+    color: #6C757D;
+    font-size: 16px;
+    font-family: "Rubik Regular",sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+}
+.index-button{
+    width: 305px;
+    height: 80px;
+    background-color: #FDC13D;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.index-button:hover{
+    background-color: #ffd50a;
+}
+.index-button-text{
+    color: #0E2F4B;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Rubik Regular",sans-serif;
+    font-weight: 700;
+    line-height: 80px;
+    word-wrap: break-word
+}
+.legalNewsPanel{
+    width: 100vw;
+    height: 140vh;
+    background-color: #faefef;
+    position: relative;
+    top: -62px;
+    border: 1px solid transparent;
+}
+.NewsPanel-header {
+    font-family: "Rubik Regular",sans-serif;
+    color: #0E2F4B;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word;
+}
+.newsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.newsBlock {
+    width: 48%;
+    height: 28vh;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    border-radius: 10px;
+    transition-duration: 2s;
+}
+.newsBlock:hover{
+    box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.1);
+}
+.newsBlock small{
+    font-family: "Rubik Regular",sans-serif;
+    color: #99A2AA;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    align-self: flex-start;
+    position: absolute;
+    padding-left: 20px;
+}
+.newsBlock h1{
+    color: #0E2F4B;
+    font-size: 18px;
+    font-family: "Rubik Regular",sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    word-wrap: break-word;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.newsBlock-p{
+    margin-top: 30px;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 12px;
+}
+.newsBlock-p p{
+    color: #0E2F4B;
+    font-size: 16px;
+    font-family: "Rubik Regular",sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+.newsBlock img{
+    align-self: flex-start;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    position: relative;
+}
+.otherNewsDiv{
+    color: #0E2F4B;
+    font-size: 16px;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 900;
+    line-height: 24px;
+    word-wrap: break-word;
+    text-align: right;
+    position: relative;
+    display: block;
+    margin: 30px;
+}
+.legalPanel-header {
+    font-family: "Rubik Regular",sans-serif;
+    color: #0E2F4B;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word;
+}
+.legalDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    position: relative;
+    right: 18px;
+}
+.legalBlock {
+    width: 31.50%;
+    height: 11vh;
+    display: block;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition-duration: 2s;
+}
+.legal:hover{
+    box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.1);
+}
+.legalBlock {
+    color: #99A2AA;
+    font-size: 20px;
+    font-family: "Rubik Regular",sans-serif;
+    font-weight: 700;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+.onlineServicePanel{
+    width: 100vw;
+    height: 70vh;
+    background-color: #FEC524;
+    position: relative;
+    top: -62px;
+    border: 1px solid transparent;
+}
+.onlineServiceDiv{
+    margin-top: 150px;
+}
+.onlineServiceDiv h1{
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word;
+}
+.onlineServiceDiv p{
+    color: #0E2F4B;
+    font-size: 16px;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+
+}
+.onlineServiceDiv span{
+    color: #0E2F4B;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+.onlineServiceIcons{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.onlineServiceIcons-padd{
+    margin-right: 10px;
+}
+.otherPanel{
+    width: 100vw;
+    height: 70vh;
+    background-color: #1d2023;
+    position: relative;
+    top: -62px;
+    border: 1px solid transparent;
+}
+.otherDiv {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.otherColumn {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.otherColumn p{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+.otherColumn a{
+    color: #99A2AA;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    transition-duration: 2s;
+}
+.otherColumn a:hover{
+    color: white;
+}
